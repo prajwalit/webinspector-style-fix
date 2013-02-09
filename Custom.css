@@ -14,6 +14,10 @@
     top: 40px !important;
 }
 
+#-webkit-web-inspector.dock-to-right #toolbar .close-left {
+    padding: 12px 10px 12px 5px !important;
+}
+
 /* Fix Elements Tab */
 
 #-webkit-web-inspector.dock-to-right .elements .source-code {
