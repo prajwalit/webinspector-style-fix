@@ -1,23 +1,5 @@
 /******** Dock To Right Style Fixes *********/
 
-/* Fix Toolbar */
-
-#-webkit-web-inspector.dock-to-right #toolbar {
-    height: auto !important;
-}
-
-#-webkit-web-inspector.dock-to-right .toolbar-label {
-    display: none;
-}
-
-#-webkit-web-inspector.dock-to-right #main {
-    top: 40px !important;
-}
-
-#-webkit-web-inspector.dock-to-right #toolbar .close-left {
-    padding: 12px 10px 12px 5px !important;
-}
-
 /* Fix Elements Tab */
 
 #-webkit-web-inspector.dock-to-right .elements .source-code {
@@ -37,4 +19,35 @@
 
 #-webkit-web-inspector.dock-to-right .elements .split-view-contents {
     position: static !important;
+}
+
+/* Fix Sources Tab */
+
+#-webkit-web-inspector.dock-to-right .scripts .split-view-contents {
+    left: auto;
+    right: auto;
+    width: 100% !important;
+    height: 50%;
+}
+
+#-webkit-web-inspector.dock-to-right .scripts .split-view-contents-vertical.maximized {
+    height: 50% !important;
+}
+
+#-webkit-web-inspector.dock-to-right .scripts .split-view-sidebar-right {
+    left: auto;
+    right: auto;
+    width: 100% !important;
+    height: 50%;
+    border-top: 1px solid #ccc;
+}
+
+#-webkit-web-inspector.dock-to-right .scripts .split-view-contents {
+    position: static !important;
+}
+
+#-webkit-web-inspector.dock-to-right .scripts #scripts-debug-sidebar-contents {
+    height: 50% !important;
+    top: 50% !important;
+    margin-top: 24px;
 }
